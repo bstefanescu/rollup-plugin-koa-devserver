@@ -30,7 +30,7 @@ export default {
 	},
 	plugins: [
 		// your build plugins here:
-    	// ...plugins,
+		// ...plugins,
 	    devServer({
 	    	port: 8088,
 	    	open: '/build/dev/index.html',
