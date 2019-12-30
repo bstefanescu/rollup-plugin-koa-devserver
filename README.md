@@ -21,6 +21,7 @@ In `rollup.config.js`:
 
 ```javascript
 import devServer from 'rollup-plugin-koa-devserver';
+import cors from '@koa/cors';
 
 export default {
 	input: './src/index.js',
@@ -33,7 +34,8 @@ export default {
 	    devServer({
 	    	port: 8088,
 	    	open: '/build/dev/index.html',
-	    	livereload: 'build/dev'
+	    	livereload: 'build/dev',
+	    	use: [ cors() ]
 	    })
     ]
 }
