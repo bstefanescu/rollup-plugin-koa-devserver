@@ -24,19 +24,19 @@ import devServer from 'rollup-plugin-koa-devserver';
 import cors from '@koa/cors';
 
 export default {
-	input: './src/index.js',
-	output: {
-		// your build output here
-	},
-	plugins: [
-		// your build plugins here:
-		// ...plugins,
-	    devServer({
-	    	port: 8088,
-	    	open: '/build/dev/index.html',
-	    	livereload: 'build/dev',
-	    	use: [ cors() ]
-	    })
+    input: './src/index.js',
+    output: {
+        // your build output here
+    },
+    plugins: [
+        // your build plugins here:
+        // ...plugins,
+        devServer({
+            port: 8088,
+            open: '/build/dev/index.html',
+            livereload: 'build/dev',
+            use: [ cors() ]
+        })
     ]
 }
 ```
