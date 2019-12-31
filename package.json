@@ -1,12 +1,12 @@
 {
   "name": "rollup-plugin-koa-devserver",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A Rollup development server based on Koa HTTP framework",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,6 +33,11 @@
   },
   "homepage": "https://github.com/bstefanescu/rollup-plugin-koa-devserver#readme",
   "dependencies": {
-    "koa-devserver": "^0.9.0"
+    "koa-devserver": "^0.9.1"
+  },
+  "devDependencies": {
+    "rollup": "^1.27.14",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
