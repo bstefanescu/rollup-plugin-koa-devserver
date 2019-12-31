@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-koa-devserver",
   "version": "0.9.0",
-  "description": "A Rollup development server based on Koa",
+  "description": "A Rollup development server based on Koa HTTP framework",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "directories": {
@@ -16,6 +16,8 @@
     "url": "git+https://github.com/bstefanescu/koa-devserver.git"
   },
   "keywords": [
+    "rollup",
+    "plugin",
     "koa",
     "development",
     "dev",
