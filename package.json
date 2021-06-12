@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-koa-devserver",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "A Rollup development server based on Koa HTTP framework",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
